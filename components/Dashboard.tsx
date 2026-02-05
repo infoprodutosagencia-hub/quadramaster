@@ -1,7 +1,7 @@
 import React from 'react';
 import { Concurso, GlobalStats } from '../types';
 import { formatCurrency, formatDate } from '../utils';
-import { TrendingUp, Calendar, DollarSign, Activity, AlertCircle } from 'lucide-react';
+import { TrendingUp, Calendar, Activity, AlertCircle } from 'lucide-react';
 
 interface DashboardProps {
   latestConcurso: Concurso | null;

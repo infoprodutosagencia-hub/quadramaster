@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { GenerationConfig, GlobalStats, GamePrediction } from '../types';
 import { generatePredictions } from '../services/lotteryService';
-import { Settings, RefreshCw, Save, CheckCircle2, AlertTriangle, Download } from 'lucide-react';
+import { Settings, RefreshCw, CheckCircle2, Download } from 'lucide-react';
 
 interface GeneratorProps {
   stats: GlobalStats | null;

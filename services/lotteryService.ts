@@ -266,7 +266,7 @@ export const api = {
                  toFetch.push(
                      fetchFromApi(`${BASE_URL}/${i}`)
                         .then(d => mapApiDataToConcurso(d))
-                        .catch(e => null)
+                        .catch(() => null)
                  );
              }
         } else if (cachedHistory.length < MIN_HISTORY) {
@@ -278,7 +278,7 @@ export const api = {
                  toFetch.push(
                      fetchFromApi(`${BASE_URL}/${i}`)
                         .then(d => mapApiDataToConcurso(d))
-                        .catch(e => null)
+                        .catch(() => null)
                  );
              }
         }

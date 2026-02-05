@@ -23,8 +23,6 @@ const Analysis: React.FC<AnalysisProps> = ({ stats }) => {
     atraso: s.atraso
   }));
 
-  const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042'];
-
   return (
     <div className="space-y-8">
         
@@ -43,7 +41,7 @@ const Analysis: React.FC<AnalysisProps> = ({ stats }) => {
                             cursor={{ fill: '#f1f5f9' }}
                         />
                         <Bar dataKey="frequencia" fill="#10b981" radius={[4, 4, 0, 0]}>
-                            {freqData.map((entry, index) => (
+                            {freqData.map((_, index) => (
                                 <Cell key={`cell-${index}`} fill={index < 3 ? '#059669' : '#34d399'} />
                             ))}
                         </Bar>

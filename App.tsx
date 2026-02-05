@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Concurso, GlobalStats } from './types';
 import { api, calculateStats } from './services/lotteryService';
 import Dashboard from './components/Dashboard';
